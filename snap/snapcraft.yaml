@@ -45,7 +45,7 @@ apps:
       - gsettings
     desktop: share/applications/cherrytree.desktop
     environment:
-      PATH: $SNAP/usr/lib/p7zip/:$PATH
+      PATH: $SNAP/usr/lib/p7zip:$PATH
 
 parts:
   desktop-gtk:
@@ -112,3 +112,5 @@ parts:
       - python-dbus
       - python-enchant
       - python-chardet
+    prime:
+      - -usr/bin/7za
